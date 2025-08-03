@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"/>
+    <node pkg="assignment2_ws" type="square_openloop.py" name="square_openloop">
+        <param name="v" value="0.2"/>
+        <param name="w" value="0.2"/>
+        <param name="tol" value="0.1"/>
+    </node>
+</launch>

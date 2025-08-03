@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"/>
+    <node pkg="assignment2_ws" type="circle.py" name="circle">
+        <param name="r" value="2"/>
+        <param name="w" value="1.04719"/>
+        <param name="tol" value="0.1"/>
+    </node>
+</launch>

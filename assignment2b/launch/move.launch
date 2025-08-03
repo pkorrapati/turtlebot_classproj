@@ -1,0 +1,21 @@
+<launch>
+    <arg name='code' default='circle'/>
+    <arg name='w' default='0.3' />
+    <arg name='v' default='0.3' />
+
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch" />    
+    
+    <group if="$(eval code == 'circle')">
+        <node pkg="assignment2b_turtlebot3" type="circle.py" name="circle">
+            <param name="r" value="2"/>
+            <param name="w" value="$(arg w)"/>        
+        </node>
+    </group>
+
+    <group if="$(eval code == 'square')">
+        <node pkg="assignment2b_turtlebot3" type="square.py" name="square">
+            <param name="v" value="$(arg v)"/>
+            <param name="w" value="$(arg w)"/>        
+        </node>
+    </group>
+</launch>
