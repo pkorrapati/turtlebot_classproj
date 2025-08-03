@@ -6,7 +6,7 @@
 3. The linear velocity and the angular velocity of the turtle are specified in the form of a twist and published
 4. The code additionally tracks the original orientation of the turtle and determines when it completes 1 full circle
 
-![Circular Trajectory followed by th Turtle](/Images/Circle.png)
+![Circular Trajectory followed by th Turtle](./Images/Circle.png)
 
 ## Square Path Open Loop Controller
 1. The code accepts the angular rate of rotation (w) and the global linear velocity (v)
@@ -19,7 +19,7 @@
 4. The body velocity of the turtle is calculated as Vb = R*[Vx, Vy]'
 5. The linear velocity and the angular velocity of the turtle are specified in the form of a twist and published
 
-![Square Trajectory followed by th Turtle](/Images/Square.png)
+![Square Trajectory followed by th Turtle](./Images/Square.png)
 
 # Launching files
 Launch circular trajectory open loop controller
