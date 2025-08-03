@@ -1,0 +1,12 @@
+<launch>
+    <arg name='code' default='circle'/>
+    <arg name='a' default='0.3' />
+    <arg name='v' default='0.3' />
+
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch" />
+        
+    <node pkg="turtlebot_tests" type="accelerate.py" name="accel">
+        <param name="a" value="$(arg a)"/>
+        <param name="v" value="$(arg v)"/>        
+    </node>
+</launch>
